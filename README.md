@@ -5,33 +5,36 @@ A next-generation Retrieval-Augmented Generation (RAG) system designed to elimin
 **Key Features:**
 > **Intelligent Document Parsing:** Uses recursive character splitting to maintain semantic context.
 
->**Vectorized Search:**Powered by FAISS for lightning-fast retrieval of relevant document segments.
+> **Vectorized Search**:Powered by FAISS for lightning-fast retrieval of relevant document segments.
 
->** Faithfulness Scoring:** Automatically evaluates if the AI's answer is actually supported by the uploaded PDF (Groundedness).
+> **Faithfulness Scoring:** Automatically evaluates if the AI's answer is actually supported by the uploaded PDF (Groundedness).
 
->** Confidence Indicators:** Provides a visual score to the user indicating how reliable the information is.
+> **Confidence Indicators**: Provides a visual score to the user indicating how reliable the information is.
 
 > **Conversational Memory:** Remembers the context of the chat for seamless follow-up questions.
 
-🏗️ Architecture
+🏗️ **Architecture**
+
 This system follows an advanced "Closed-Loop" RAG architecture:
-Ingestion: PDF $\rightarrow$ Text Chunks $\rightarrow$ Vector Embeddings.
-Retrieval: User Query $\rightarrow$ Semantic Search $\rightarrow$ Top-k Context Chunks.
-Generation: Context + Query $\rightarrow$ LLM $\rightarrow$ Response.
-Evaluation: Response + Context $\rightarrow$ Quality Check (Faithfulness & Confidence).
+
+**Ingestion**: PDF $\rightarrow$ Text Chunks $\rightarrow$ Vector Embeddings.
+**Retrieval**: User Query $\rightarrow$ Semantic Search $\rightarrow$ Top-k Context Chunks.
+**Generation**: Context + Query $\rightarrow$ LLM $\rightarrow$ Response.
+**Evaluation**: Response + Context $\rightarrow$ Quality Check (Faithfulness & Confidence).
 
 
-📊 Comparison: Why this is better than "Normal" RAG
+📊 **Comparison**: **Why this is better than** "**Normal**" **RAG**
 Standard RAG systems often suffer from "hallucinations" where the AI makes up facts not found in the source.
 This project solves that by adding a verification step.
 
-🛠️ Tech Stack
-Framework: LangChain
+🛠️ **Tech Stack**
 
-LLM: OpenAI GPT-4o / GPT-3.5-Turbo
+**Framework**: LangChain
 
-Vector Store: FAISS (Facebook AI Similarity Search)
+**LLM**: OpenAI GPT-4o / GPT-3.5-Turbo
 
-Frontend: Streamlit
+**Vector Store**: FAISS (Facebook AI Similarity Search)
 
-Environment: Python 3.9+
+**Frontend**: Streamlit
+
+**Environment**: Python 3.9+
