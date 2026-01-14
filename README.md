@@ -5,7 +5,7 @@ A next-generation Retrieval-Augmented Generation (RAG) system designed to elimin
 **Key Features:**
 > **Intelligent Document Parsing:** Uses recursive character splitting to maintain semantic context.
 
-> **Vectorized Search: ** Powered by FAISS for lightning-fast retrieval of relevant document segments.
+>**Vectorized Search:**Powered by FAISS for lightning-fast retrieval of relevant document segments.
 
 >** Faithfulness Scoring:** Automatically evaluates if the AI's answer is actually supported by the uploaded PDF (Groundedness).
 
